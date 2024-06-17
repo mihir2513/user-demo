@@ -97,7 +97,9 @@ const Navbar = ({ navigation, setActiveNav, activeNav }) => {
                                                 <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                                                     <span className="sr-only">Open user menu</span>
                                                     <span className="inline-flex bg-slate-300 size-10 items-center justify-center border-slate-400 border rounded-full">
-                                                        <span className="text-slate-800">{user?.firstName}</span>
+                                                        <span className="text-slate-800">
+                                                            {user?.firstName}
+                                                        </span>
                                                     </span>
                                                 </MenuButton>
                                             </div>
@@ -143,7 +145,9 @@ const Navbar = ({ navigation, setActiveNav, activeNav }) => {
                                                                     active ? "bg-gray-100" : "",
                                                                     "block px-4 py-2 text-sm text-gray-700 cursor-pointer"
                                                                 )}
-                                                                onClick={() => dispatch(logout())}
+                                                                onClick={() => {
+                                                                    dispatch(logout());
+                                                                }}
                                                             >
                                                                 Sign out
                                                             </div>

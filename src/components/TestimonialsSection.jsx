@@ -1,5 +1,5 @@
 const TestimonialsSection = () => (
-    <div className="testimonials py-20 px-4  text-center text-white">
+    <div className="testimonials animate-slidein opacity-0 [--slidein-delay:700ms] py-20 px-4  text-center text-white">
         <h2 className="text-4xl font-bold mb-10">What Our Users Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="testimonial-item">

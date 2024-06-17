@@ -77,7 +77,7 @@ const UsersPage = () => {
     );
     return (
         <>
-            <UserTable columns={columns} data={users} />
+            <UserTable columns={columns} data={users} actions={true} />
             {userId && (
                 <ViewDialog
                     userId={userId}
