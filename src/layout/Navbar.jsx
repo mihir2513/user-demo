@@ -183,7 +183,7 @@ const Navbar = ({ navigation, setActiveNav, activeNav }) => {
                                 <DisclosureButton
                                     key={item.name}
                                     as="div"
-                                    onClick={() => onNavbarClick(item.name)}
+                                    onClick={() => onNavbarClick(item.name, item.href)}
                                     className={classNames(
                                         item.name === activeNav
                                             ? "bg-gray-900 text-white"
