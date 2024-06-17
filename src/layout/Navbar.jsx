@@ -120,7 +120,7 @@ const Navbar = ({ navigation, setActiveNav, activeNav }) => {
                                                                     active ? "bg-gray-100" : "",
                                                                     "block px-4 py-2 text-sm text-gray-700 cursor-pointer"
                                                                 )}
-                                                                onClick={() => navigate("/profile")}
+                                                                onClick={() => onNavbarClick("profile","/profile")}
                                                             >
                                                                 Your Profile
                                                             </div>
